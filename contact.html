@@ -81,7 +81,7 @@
                 <a href="about.html" class="nav-item nav-link">Nosotros</a>
                 <a href="service.html" class="nav-item nav-link">Servicios</a>
                 <a href="project.html" class="nav-item nav-link">Noticias</a>                
-                <a style="display: none;" href="contact.html" class="nav-item nav-link active">Contacto</a>
+                <a href="contact.html" class="nav-item nav-link active">Contacto</a>
             </div>
             <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Bienvenidos!<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
@@ -111,37 +111,36 @@
                 <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 ps-lg-0">
                         <h4 class="text-primary">Contactanos</h4>
-                        <h1 class="mb-4">Siéntete libre de contactarnos!</h1>
-                        <p class="mb-4" style="display: none;">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                        <p class="mb-4" >Se necesita un desarrollo para poder enviar correos electronicos*.</p>
+                        <h1 class="mb-4">Siéntete libre de contactarnos.</h1>
+                        <p class="mb-4" style="display: none;">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>                        
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input required type="text" class="form-control" id="nombre" placeholder="Your Name">
                                         <label for="name">Tu Nombre</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input  required type="email" class="form-control" id="email" placeholder="Your Email">
                                         <label for="email">Tu Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input required type="text" class="form-control" id="titulo" placeholder="Subject">
                                         <label for="subject">Titulo</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                        <textarea required class="form-control" placeholder="Leave a message here" id="mensaje" style="height: 100px"></textarea>
                                         <label for="message">Mensaje</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Enviar</button>
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" id="enviar" type="submit">Enviar</button>
                                 </div>
                             </div>
                         </form>
@@ -248,6 +247,12 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+     <script src="js/email.js"></script>   
+
+    
 </body>
 
 </html>
