@@ -6,9 +6,9 @@ const titulo = document.querySelector('#titulo');
 const mensaje = document.querySelector("#mensaje");
 // fin formulario contacto
 // variables EmailJS
-const serviceId = 'service_7123d8a';
-const templateId = 'template_h4auyfv';
-const publicKey = 'gXQOLMZWjQ7JzX1Zo';
+const serviceId = 'service_a5kx6rj';
+const templateId = 'template_pftbxka';
+const publicKey = 'KLbrdOeIOpubVEO4a';
 emailjs.init(publicKey);         
 // fin variables EmailJS
 
